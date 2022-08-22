@@ -355,6 +355,7 @@ namespace Files.Uwp.ViewModels
                 userSettingsService.LayoutSettingsService.ShowDateCreatedColumn = !prefs.ColumnsViewModel.DateCreatedColumn.UserCollapsed;
                 userSettingsService.LayoutSettingsService.ShowTypeColumn = !prefs.ColumnsViewModel.ItemTypeColumn.UserCollapsed;
                 userSettingsService.LayoutSettingsService.ShowSizeColumn = !prefs.ColumnsViewModel.SizeColumn.UserCollapsed;
+                userSettingsService.LayoutSettingsService.ShowTrackNumberColumn = !prefs.ColumnsViewModel.TrackNumberColumn.UserCollapsed;
                 userSettingsService.LayoutSettingsService.ShowFileTagColumn = !prefs.ColumnsViewModel.TagColumn.UserCollapsed;
             }
         }
@@ -543,6 +544,7 @@ namespace Files.Uwp.ViewModels
             userSettingsService.LayoutSettingsService.ShowDateCreatedColumn = !columns.DateCreatedColumn.UserCollapsed;
             userSettingsService.LayoutSettingsService.ShowTypeColumn = !columns.ItemTypeColumn.UserCollapsed;
             userSettingsService.LayoutSettingsService.ShowSizeColumn = !columns.SizeColumn.UserCollapsed;
+            userSettingsService.LayoutSettingsService.ShowTrackNumberColumn = !columns.TrackNumberColumn.UserCollapsed;
             userSettingsService.LayoutSettingsService.ShowFileTagColumn = !columns.TagColumn.UserCollapsed;
             //TODO: save column sizes
         }

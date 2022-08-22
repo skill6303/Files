@@ -99,9 +99,17 @@ namespace Files.Uwp.ViewModels
             get => sizeColumn;
             set => SetProperty(ref sizeColumn, value);
         }
+        
+        private ColumnViewModel trackNumberColumn = new ColumnViewModel();
+
+        public ColumnViewModel TrackNumberColumn
+        {
+            get => trackNumberColumn;
+            set => SetProperty(ref trackNumberColumn, value);
+        }
 
         public double TotalWidth => IconColumn.Length.Value + TagColumn.Length.Value + NameColumn.Length.Value + DateModifiedColumn.Length.Value + OriginalPathColumn.Length.Value
-            + ItemTypeColumn.Length.Value + DateDeletedColumn.Length.Value + DateCreatedColumn.Length.Value + SizeColumn.Length.Value + StatusColumn.Length.Value;
+            + ItemTypeColumn.Length.Value + DateDeletedColumn.Length.Value + DateCreatedColumn.Length.Value + SizeColumn.Length.Value + TrackNumberColumn.Length.Value + StatusColumn.Length.Value;
 
         public void SetDesiredSize(double width)
         {
@@ -126,6 +134,7 @@ namespace Files.Uwp.ViewModels
             DateDeletedColumn.TryMultiplySize(factor);
             DateCreatedColumn.TryMultiplySize(factor);
             SizeColumn.TryMultiplySize(factor);
+            TrackNumberColumn.TryMultiplySize(factor);
             StatusColumn.TryMultiplySize(factor);
         }
 
@@ -149,6 +158,7 @@ namespace Files.Uwp.ViewModels
                     model.NameColumn.Equals(this.NameColumn) &&
                     model.OriginalPathColumn.Equals(this.OriginalPathColumn) &&
                     model.SizeColumn.Equals(this.SizeColumn) &&
+                    model.TrackNumberColumn.Equals(this.TrackNumberColumn) &&
                     model.StatusColumn.Equals(this.StatusColumn) &&
                     model.TagColumn.Equals(this.TagColumn));
             }
@@ -164,6 +174,7 @@ namespace Files.Uwp.ViewModels
             hashCode = (hashCode * 397) ^ NameColumn.GetHashCode();
             hashCode = (hashCode * 397) ^ OriginalPathColumn.GetHashCode();
             hashCode = (hashCode * 397) ^ SizeColumn.GetHashCode();
+            hashCode = (hashCode * 397) ^ TrackNumberColumn.GetHashCode();
             hashCode = (hashCode * 397) ^ StatusColumn.GetHashCode();
             hashCode = (hashCode * 397) ^ TagColumn.GetHashCode();
             return hashCode;

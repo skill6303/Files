@@ -8,6 +8,7 @@
         Size,
         FileType,
         SyncStatus,
+        Number,
         FileTag,
         OriginalFolder,
         DateDeleted

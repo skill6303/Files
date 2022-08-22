@@ -321,6 +321,15 @@
 								IsOn="{Binding ShowDateCreatedColumn, Mode=TwoWay}"
 								Style="{StaticResource RightAlignedToggleSwitchStyle}" />
 						</local:SettingsBlockControl>
+						<local:SettingsBlockControl Title="{helpers:ResourceString Name=DisplayTrackNumberColumn}" HorizontalAlignment="Stretch">
+							<local:SettingsBlockControl.Icon>
+								<FontIcon Glyph="&#xE7B3;" />
+							</local:SettingsBlockControl.Icon>
+							<ToggleSwitch
+								AutomationProperties.Name="{helpers:ResourceString Name=DisplayTrackNumberColumn}"
+								IsOn="{Binding ShowTrackNumberColumn, Mode=TwoWay}"
+								Style="{StaticResource RightAlignedToggleSwitchStyle}" />
+						</local:SettingsBlockControl>
 					</StackPanel>
 				</local:SettingsBlockControl.ExpandableContent>
 			</local:SettingsBlockControl>

@@ -294,6 +294,19 @@ namespace Files.Uwp.Filesystem
             }
         }
 
+        private string trackNumber;
+        public string TrackNumber
+        {
+            get => trackNumber;
+            set
+            {
+                if (value != null)
+                {
+                    SetProperty(ref trackNumber, value);
+                }
+            }
+        }
+
         public string FileExtension { get; set; }
 
         private string fileSize;

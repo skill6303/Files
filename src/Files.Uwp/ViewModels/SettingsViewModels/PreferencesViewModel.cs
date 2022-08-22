@@ -675,6 +675,19 @@ namespace Files.Uwp.ViewModels.SettingsViewModels
                     OnPropertyChanged();
                 }
             }
+        }        
+
+        public bool ShowTrackNumberColumn
+        {
+            get => UserSettingsService.LayoutSettingsService.ShowTrackNumberColumn;
+            set
+            {
+                if (value != UserSettingsService.LayoutSettingsService.ShowTrackNumberColumn)
+                {
+                    UserSettingsService.LayoutSettingsService.ShowTrackNumberColumn = value;
+                    OnPropertyChanged();
+                }
+            }
         }
 
         public bool ShowTypeColumn

@@ -24,6 +24,11 @@ namespace Files.Backend.Services.Settings
         /// Gets or sets a value indicating whether or not the size column should be visible.
         /// </summary>
         bool ShowSizeColumn { get; set; }
+        
+        /// <summary>
+        /// Gets or sets a value indicating whether or not the track number column should be visible.
+        /// </summary>
+        bool ShowTrackNumberColumn { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether or not the filetag column should be visible.

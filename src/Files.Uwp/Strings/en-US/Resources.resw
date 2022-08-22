@@ -2807,6 +2807,12 @@ We use App Center to track which settings are being used, find bugs, and fix cra
   <data name="DisplaySizeColumn" xml:space="preserve">
     <value>Display Size column</value>
   </data>
+  <data name="DisplayTrackNumberColumn" xml:space="preserve">
+    <value>Display # column</value>
+  </data>
+  <data name="TrackNumberColumn" xml:space="preserve">
+    <value>#</value>
+  </data>
   <data name="DisplayTagColumn" xml:space="preserve">
     <value>Display Tag column</value>
   </data>

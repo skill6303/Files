@@ -33,6 +33,7 @@ namespace Files.Uwp.Helpers.LayoutPreferences
             this.IsAdaptiveLayoutOverridden = false;
 
             this.ColumnsViewModel = new ColumnsViewModel();
+            this.ColumnsViewModel.TrackNumberColumn.UserCollapsed = !UserSettingsService.LayoutSettingsService.ShowTrackNumberColumn;
             this.ColumnsViewModel.DateCreatedColumn.UserCollapsed = !UserSettingsService.LayoutSettingsService.ShowDateCreatedColumn;
             this.ColumnsViewModel.DateModifiedColumn.UserCollapsed = !UserSettingsService.LayoutSettingsService.ShowDateColumn;
             this.ColumnsViewModel.ItemTypeColumn.UserCollapsed = !UserSettingsService.LayoutSettingsService.ShowTypeColumn;

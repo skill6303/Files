@@ -36,6 +36,12 @@ namespace Files.Uwp.ServicesImplementation.Settings
             set => Set(value);
         }
 
+        public bool ShowTrackNumberColumn
+        {
+            get => Get(false);
+            set => Set(value);
+        }
+
         public bool ShowFileTagColumn
         {
             get => Get(true);

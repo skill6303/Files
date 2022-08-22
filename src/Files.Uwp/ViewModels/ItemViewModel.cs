@@ -1109,6 +1109,7 @@ namespace Files.Uwp.ViewModels
                                         item.ItemType = matchingStorageFile.DisplayType;
                                         item.SyncStatusUI = CloudDriveSyncStatusUI.FromCloudDriveSyncStatus(syncStatus);
                                         item.FileFRN = fileFRN;
+                                        //item.TrackNumber = ???;
                                         item.FileTags = fileTag;
                                     }, DispatcherQueuePriority.Low);
                                     FileTagsHelper.DbInstance.SetTags(item.ItemPath, item.FileFRN, item.FileTags);
